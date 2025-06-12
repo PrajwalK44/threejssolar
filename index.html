@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>3D Solar System</title>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+        font-family: Arial, sans-serif;
+        background: #000;
+      }
+
+      .tooltip {
+        position: absolute;
+        background: rgba(0, 0, 0, 0.9);
+        color: white;
+        padding: 15px;
+        border-radius: 10px;
+        pointer-events: none;
+        display: none;
+        z-index: 1000;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        max-width: 250px;
+        font-size: 14px;
+        line-height: 1.4;
+      }
+
+      .tooltip h3 {
+        margin: 0 0 8px 0;
+        color: #ffd700;
+        font-size: 16px;
+      }
+
+      .tooltip .distance {
+        color: #87ceeb;
+        font-size: 12px;
+        margin: 5px 0;
+      }
+
+      .tooltip .description {
+        margin: 8px 0 0 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="tooltip" class="tooltip">
+      <h3 id="tooltip-name"></h3>
+      <div id="tooltip-distance" class="distance"></div>
+      <div id="tooltip-description" class="description"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
