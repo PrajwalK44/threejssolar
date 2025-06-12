@@ -10,7 +10,7 @@
 
 1. **Clone or download the project**
    ```bash
-   git clone [text](https://github.com/PrajwalK44/threejssolar)
+   git clone https://github.com/PrajwalK44/threejssolar
    cd solar-system-project
    ```
 
